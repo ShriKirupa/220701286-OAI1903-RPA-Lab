@@ -1,0 +1,236 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="852,2238" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisape="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.GoogleCloud.Models</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>UiPath.GoogleCloud.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleCloud</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.OmniPage.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleCloud.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="608,2173.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="outputText" />
+      <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Emails" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Phnos" />
+      <Variable x:TypeArguments="x:String" Name="Phno" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uisape:ExtractPDFText ApplyOcr="{x:Null}" FilePassword="{x:Null}" OcrEngine="{x:Null}" DisplayName="Extract PDF Text" sap:VirtualizedContainerService.HintSize="546,124" sap2010:WorkflowViewState.IdRef="ExtractPDFText_1" PdfFile="[LocalResource.FromPath(&quot;C:\\Users\\Shrik\\Downloads\\challenge (1).pdf&quot;)]" Text="[outputText]" />
+    <ui:Matches BuilderPattern="((?&gt;[a-zA-Z\d!#$%&amp;'*+\-\/=?^_`{|}~]+\x20*|&quot;((?=[\x01-\x7f])[^&quot;\\]|\\[\x01-\x7f])*&quot;\x20*)*(?&lt;angle&gt;&lt;))?((?!\.)(?&gt;\.?[a-zA-Z\d!#$%&amp;'*+\-\/=?^_`{|}~]+)+|&quot;((?=[\x01-\x7f])[^&quot;\\]|\\[\x01-\x7f])*&quot;)@(((?!-)[a-zA-Z\d\-]+(?&lt;!-)\.)+[a-zA-Z]{2,}|\[(((?(?&lt;!\[)\.)(25[0-5]|2[0-4]\d|[01]?\d?\d)){4}|[a-zA-Z\d\-]*[a-zA-Z\d]:((?=[\x01-\x7f])[^\\\[\]]|\\[\x01-\x7f])+)\])(?(angle)&gt;)" DisplayName="Find Matching Patterns" FirstMatch="[Email]" sap:VirtualizedContainerService.HintSize="546,92" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[outputText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;EMAIL&quot;,&quot;OperationName&quot;:&quot;Email&quot;,&quot;OperationValue&quot;:&quot;((?&gt;[a-zA-Z\\d!#$%&amp;'*+\\-\\\/=?^_`{|}~]+\\x20*|\&quot;((?=[\\x01-\\x7f])[^\&quot;\\\\]|\\\\[\\x01-\\x7f])*\&quot;\\x20*)*(?&lt;angle&gt;&lt;))?((?!\\.)(?&gt;\\.?[a-zA-Z\\d!#$%&amp;'*+\\-\\\/=?^_`{|}~]+)+|\&quot;((?=[\\x01-\\x7f])[^\&quot;\\\\]|\\\\[\\x01-\\x7f])*\&quot;)@(((?!-)[a-zA-Z\\d\\-]+(?&lt;!-)\\.)+[a-zA-Z]{2,}|\\[(((?(?&lt;!\\[)\\.)(25[0-5]|2[0-4]\\d|[01]?\\d?\\d)){4}|[a-zA-Z\\d\\-]*[a-zA-Z\\d]:((?=[\\x01-\\x7f])[^\\\\\\[\\]]|\\\\[\\x01-\\x7f])+)\\])(?(angle)&gt;)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="((?&gt;[a-zA-Z\d!#$%&amp;'*+\-\/=?^_`{|}~]+\x20*|&quot;((?=[\x01-\x7f])[^&quot;\\]|\\[\x01-\x7f])*&quot;\x20*)*(?&lt;angle&gt;&lt;))?((?!\.)(?&gt;\.?[a-zA-Z\d!#$%&amp;'*+\-\/=?^_`{|}~]+)+|&quot;((?=[\x01-\x7f])[^&quot;\\]|\\[\x01-\x7f])*&quot;)@(((?!-)[a-zA-Z\d\-]+(?&lt;!-)\.)+[a-zA-Z]{2,}|\[(((?(?&lt;!\[)\.)(25[0-5]|2[0-4]\d|[01]?\d?\d)){4}|[a-zA-Z\d\-]*[a-zA-Z\d]:((?=[\x01-\x7f])[^\\\[\]]|\\[\x01-\x7f])+)\])(?(angle)&gt;)" RegexOption="IgnoreCase, Compiled" Result="[Emails]" />
+    <ui:Matches BuilderPattern="(407)([0-9])*" DisplayName="Find Matching Patterns" FirstMatch="[Phno]" sap:VirtualizedContainerService.HintSize="546,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[outputText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(407)([0-9])&quot;,&quot;QuantifierFirstValue&quot;:&quot;*&quot;,&quot;QuantifierID&quot;:&quot;ANY&quot;,&quot;QuantifierName&quot;:&quot;Any (0 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(407)([0-9])*" RegexOption="IgnoreCase, Compiled" Result="[Phnos]" />
+    <ui:ForEach x:TypeArguments="str:Match" CurrentIndex="{x:Null}" DisplayName="For Each currentMatch" sap:VirtualizedContainerService.HintSize="546,894.6666666666666" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Emails]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="str:Match">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="str:Match" Name="currentMatch" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,746.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Document1 - Word" sap:VirtualizedContainerService.HintSize="450,658.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="adbec8a8-48ab-4d09-b98c-612c8162c995" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,338.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'edit Page 1 content'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,248" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="adbec8a8-48ab-4d09-b98c-612c8162c995" Text="[&quot;Email:&quot;+currentMatch.ToString() + &quot;[k(Enter)]&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="8fb53305-0c71-41f1-a4ae-207c3195d6af" CvElementArea="365, 297, 1195, 809" CvType="InputBox" DesignTimeRectangle="363, 448, 1190, 658" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" Guid="895bd758-a7ac-44ab-ab10-effbc901190a" InformativeScreenshot="4979d2218f8d76f884e557566d9cac8b.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-11, -11, 1942, 1150" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="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" InformativeScreenshot="65630efc1fcf5a7ba9eda03b8248669c.png" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;" Title="Document1 - Word" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:ForEach x:TypeArguments="str:Match" CurrentIndex="{x:Null}" DisplayName="For Each currentMatch" sap:VirtualizedContainerService.HintSize="546,882.6666666666666" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Phnos]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="str:Match">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="str:Match" Name="currentMatch" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,744" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Document1 - Word" sap:VirtualizedContainerService.HintSize="450,656" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="0fd90735-4750-4de1-bd73-853345544574" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,336" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Email:jsmith@itsolution…'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="354,248" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="0fd90735-4750-4de1-bd73-853345544574" Text="[&quot;Phone Number: &quot;+currentMatch.ToString() + &quot;[k(Enter)][k(NumEnter)]&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="5f40a19d-da21-475c-a240-b48209dcd84f" CvElementArea="377, 282, 1181, 825" CvType="InputBox" DesignTimeRectangle="363, 308, 1190, 798" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" Guid="93f0edc1-3d98-4d85-81eb-1296442782b0" InformativeScreenshot="74fada9107f923109b1ec9dc9863a9c5.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-11, -11, 1942, 1150" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="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" InformativeScreenshot="eb75404d4787949ce7d0352079269462.png" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;" Title="Document1 - Word" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
